@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos Artisans 2.0 - L'Excellence Phygitale Ivoirienne</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: "#781E20",
+            accent: "#F59E0B",
+            tropical: "#2F8F6E",
+            earth: "#E9D8C5",
+            surface: "#FDFBF7"
+          },
+          fontFamily: {
+            display: ["Playfair Display", "serif"],
+            sans: ["Manrope", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glass {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .dark .glass {
+      background: rgba(18, 18, 18, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+    @keyframes dynamicSignatureGradient {
+      0%, 20% { background-position: 0% 50%; }
+      25%, 45% { background-position: 33% 50%; }
+      50%, 70% { background-position: 66% 50%; }
+      75%, 95% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .koffmann-group-text {
+      font-weight: 800;
+      background: linear-gradient(90deg, #F59E0B, #2F8F6E, #3B82F6, #EF4444, #F59E0B);
+      background-size: 400% 400%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: dynamicSignatureGradient 20s ease-in-out infinite;
+      display: inline-block;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0",
+    "firebase/app": "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js",
+    "firebase/firestore": "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js",
+    "firebase/": "https://esm.sh/firebase@^12.7.0/"
+  }
+}
+</script>
+</head>
+<body class="bg-surface text-slate-900 font-sans antialiased overflow-x-hidden">
+  <div id="root"></div>
+</body>
+</html>
